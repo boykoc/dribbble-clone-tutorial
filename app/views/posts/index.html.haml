@@ -1,3 +1,4 @@
-%h1 This is a placeholder
-
-%p First time using haml...interesting
+- @posts.each do |post|
+  %h2= link_to post.title, post
+  
+= link_to "Add New Inspiration", new_post_path
