@@ -13,7 +13,8 @@
       #logo= link_to "Dribbble Like Fun Times", root_path
       %nav
         - if user_signed_in?
-          = link_to current_user.name, edit_user_registration_path
+          = link_to "Sign Out", destroy_user_session_path, method: :delete
+          = link_to current_user.name.capitalize  , edit_user_registration_path
           = link_to "Add New Inspiration", new_post_path, class: "button"
         - else
           = link_to "Sign In", new_user_session_path

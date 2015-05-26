@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 
-.button {
+.button, input, textarea {
 	border: 1px solid #9B9B9B;
 	padding: .7rem 1.25rem;
 	border-radius: .3rem;
@@ -45,6 +45,27 @@ h1, h2, h3, h4, h5, h6 {
 	background: white;
 	color: #9B9B9B;
 }
+
+.input {
+  margin-bottom: 1rem;
+  input[type="text"], input[type="email"], input[type="password"], textarea, input {
+    width: 100%;
+	  margin: 1rem 0;
+		border: 1px solid #E4E4E4;
+		background: #F8F9FA;
+		border-radius: 0.3rem;
+  }
+  input {
+    background: #ffffff;
+  }
+  input[type="checkbox"] {
+    width: 1rem;
+  }
+  textarea {
+      min-height: 150px;
+    }
+}
+
 
 header {
 	width: 100%;
